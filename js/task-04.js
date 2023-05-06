@@ -1,6 +1,6 @@
-const elementBtn = document.querySelector("#counter");
-const decrementBtn = elementBtn.firstElementChild;
-const incrementBtn = elementBtn.lastElementChild;
+const divEl = document.querySelector("#counter");
+const decrementBtn = divEl.firstElementChild;
+const incrementBtn = divEl.lastElementChild;
 const counterValue = document.querySelector("#value");
 let counter = 0;
 decrementBtn.addEventListener("click", countDecrement);
