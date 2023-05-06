@@ -3,15 +3,16 @@ const form = document.querySelector('.login-form');
 form.addEventListener('submit', (event) => {
     event.preventDefault();
     const {
-        elements: { email, pessword }
+        elements: { email, password }
     } = event.currentTarget;
 
     if (email.value === '' || password.value === '') {
-        alert('Заполнены не все поля, пожалуйста заполните');
+        alert('Заповніть всі поля!!!');
     };
 
-    const obj = { Email: email.value, Password: password.value };
+    const objEl = { Email: email.value, Password: password.value };
 
-    console.log(obj);
+    console.log(objEl);
     form.reset();
 });
+
